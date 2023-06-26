@@ -28,20 +28,26 @@ header{
 }
 /* header! */
 
-/* navbar */
-#navbar{
-
-}
+/* navbar menu*/
 #navbar ul{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    position: relative;
-    left: 90%;
-    top: 50%;
+    margin-top: 5%;
 }
 #navbar ul li{
-    display: contents;
-    color: white;
-    font-size: 1.2em;
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.2rem;
 }
-/* navbar! */
+#navbar ul li ul{
+    display: none;
+}
+#navbar ul li:hover{
+    background-color: gray;
+}
+#navbar ul li:hover > ul{
+    display: flex;
+    flex-direction: column;
+}
+/* navbar menu! */
