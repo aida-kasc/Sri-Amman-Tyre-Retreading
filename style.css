@@ -22,7 +22,8 @@ header{
     top: 0;
     z-index: 1;
     zoom: 1;
-    background: url("images/header-bg.png") repeat-x bottom left;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 10px 0.01px black;
 }
 header .wrapper{
     display: flex;
@@ -58,10 +59,15 @@ header .social_media{
 .menu ul li ul{
     display: none;
     position: absolute;
-    background-color: gray;
+    background-color: navajowhite;
+    padding-right: 50px;
+}
+.menu ul li ul li{
+    color: red;
 }
 .menu ul li:hover{
     background-color: lightgray;
+    color: red;
 }
 .menu ul li:hover > ul{
     display: flex;
