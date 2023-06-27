@@ -1,13 +1,17 @@
-/* over all*/
+/* over all */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: black;
 }
 html{
     font-size: 20px;
 }
-/* over all!*/
+a{
+    text-decoration: none;
+}
+/* /over all */
 
 /* header */
 header{
@@ -20,34 +24,51 @@ header{
     zoom: 1;
     background: url("images/header-bg.png") repeat-x bottom left;
 }
-.wrapper{
+header .wrapper{
     display: flex;
     flex-direction: row;
-    width: 60%;
+    max-width: 70%;
     margin: 0 auto;
 }
-/* header! */
+header .social_media{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 30%;
+    align-items: center;
+}
+/* /header */
 
-/* navbar menu*/
-#navbar ul{
+/* menu */
+.menu{
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+.menu ul{
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    list-style: none;
 }
-#navbar ul li{
-    display: inline;
-    margin-left: 20px;
-    font-size: 1.2rem;
+.menu li{
+    margin-left: 10px;
 }
-#navbar ul li ul{
+.menu ul li ul{
     display: none;
-}
-#navbar ul li:hover{
+    position: absolute;
     background-color: gray;
 }
-#navbar ul li:hover > ul{
+.menu ul li:hover{
+    background-color: lightgray;
+}
+.menu ul li:hover > ul{
     display: flex;
     flex-direction: column;
 }
-/* navbar menu! */
+/* /menu */
+
+/* landing section */
+
+/* /landing section */
