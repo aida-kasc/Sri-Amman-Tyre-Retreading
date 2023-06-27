@@ -126,9 +126,78 @@ overflow-x: hidden;
     overflow-x: hidden;
     height: 100%;
     }
-.wrapper{
-    max-width: 1300px;
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+        align-items:center;
+    background:#23EC39;
+}    
+.slider{
+    widht:800px;
+    height:500px;
+    border-radius:10px;
+}
+.slides{
+    width:500px;
+    height:500px;
+    display:flex;
+}
+.slides{
+    width:500%;
+    height:500px;
+    display:flex;
+}
+.slides input{
+    display:name;
+}
+.slides{
+width:20%;
+    transtion:2s;
+}
+.slide img{
+    width:800px;
+    height:500px;
+}
+.navigation-manual{    
+}
+.manual-btn{
+    border:2px solid #4003dc;
+    padding :5px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:1s;
+}
+
+.manual-btn:not(:last-child){
+    matgin-right:40px;
+}
+.manual-btn:hover{
+    background:#40D3DC;
+/*wrapper*/
+   .wrapper{
+       max-width: 1300px;
        width: 100%;
        display: block;
 }
+#guna1:checked~ .first{
+    margin-left:0;
+}
+    
+#guna2:checked~ .first{
+    margin-left:-20;
+}
+    #guna3:checked~ .first{
+    margin-left:-40; 
+    }
+    #guna4:checked~ .first{
+    margin-left:-60;
+}
+    
+    
+/*/wrapper*/
+
+
 /* /landing section */
