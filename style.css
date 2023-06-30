@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* /over all */
 
@@ -89,8 +89,8 @@ header .social_media{
     align-items: center;
 }
 .slider{
-    width: 800px;
-    height: 500px;
+    width: 80vw;
+    height: 95vh;
     border-radius: 10px;   
 }
 .slides{
@@ -106,12 +106,12 @@ header .social_media{
     transition: 2s;
 }
 .slide img{
-    width: 800px;
-    height: 500px;
+    width: 80vw;
+    height: 95vh;
 }
 .navigation-manual{
     position: absolute;
-    width: 800px;
+    width: 90vw;
     margin-top: 460px;
     display: flex;
     justify-content: center;
@@ -138,5 +138,27 @@ header .social_media{
 }
 #radio4:checked ~ .first{
     margin-left: -60%;
+}
+.celestialr{
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 10vw;
+    left: 0;
+    top: 10vh;
+}
+.celestiall{
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 10vw;
+    right: 0;
+    top: 10vh;
+}
+
+#floating_logo{
+    position: absolute;
+    right: 0;
+    bottom: 60%;
 }
 /* /landing section */
