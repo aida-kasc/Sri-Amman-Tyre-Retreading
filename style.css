@@ -164,48 +164,53 @@ header .social_media{
 /* /landing section */
 
 /* tyres selection */
-#tyersselection{
+.tyreselection .wrapper{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vh;
+    height: 20vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .tyreslider{
-    height: 20VH;
-    width: 25vw;
-    border-radius: 10px; 
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;   
 }
 .tyreslides{
     width: 500%;
-    height: 5vh;
+    height: 150px;
     display: flex;
 }
-.tyreslide{
-    position: relative;
+.tyreslides input{
+    display: none;
+}
+.tslide{
     width: 20%;
     transition: 2s;
-    left: 20%;
-    margin-left: 10px;
 }
-.tyreslide img{
-    height: 20VH;
-    width: 25vw;
-}
-.tyreslides button{
-    height: 60px;
-    width: 50px;
-}
-.tyrecelestialr{
-    background-color: red;
+.tslide img{
+    width: 20vw;
     height: 20vh;
-    width: 32vw;
 }
-.tyrecelestiall{
-    background-color: red;
-    height: 20vh;
-    width: 32vw;
+.tcelestialr{
+    position: absolute;
+    background-color: white;
+    width: 40vw;
+    height: 150px;
+    left: 0;
+    top: 109vh;
+}
+.tcelestiall{
+    position: absolute;
+    background-color: white;
+    width: 40vw;
+    height: 150px;
+    right: 0;
+    top: 109vh;
+}
+#tfirsta{
+    margin-left: 0;
 }
 /* /tyres selection */
