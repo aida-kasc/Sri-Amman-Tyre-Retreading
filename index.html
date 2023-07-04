@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <div id="loadingscreen" hidden>
+      <img src="images/loading-screen1.gif" class="loadinscreengif">
+    </div>
     <header>
       <div class="wrapper">
         <img src="images/logo.png" alt="logo" class="logo" style="position: absolute;"/>
@@ -60,8 +63,8 @@
         <div class="social_media">
           <img src="images/insta.png" href="#" alt="instagram">
           <img src="images/twitter.png" href="#" alt="twitter">
-          <img src="images/facebook.png" href="#" alt="facebook">
-          <img src="images/mail.png" href="#" alt="mail">
+          <img src="images/fb.png" href="#" alt="facebook">
+          <img src="images/yt.png" href="#" alt="mail">
         </div>
       </div>
     </header>
@@ -105,8 +108,8 @@
       <div class="wrapper">
         <div class="tyreslider">
           <div class="tyreslides">
-            <div class="tslide tfirst" id="tfirsta">
-              <img src="images/tyre selection slide/bike.png" alt="Bike">
+            <div class="tslide" id="tfirst">
+              <img src="images/tyre selection slide/bike.png" class="bike" alt="Bike">
             </div>
             <div class="tslide">
               <img src="images/tyre selection slide/car.png" alt="Car">
@@ -118,10 +121,12 @@
               <img src="images/tyre selection slide/tractor.png" alt="Tractor">
             </div>
           </div>
+          <img src="images/prev.png" onclick="tprev()" class="prevbtn">
           <div class="tcelestialr">
           </div>
           <div class="tcelestiall">
           </div>
+          <img src="images/next.png" class="nextbtn">
         </div>
   </body>
 </html>

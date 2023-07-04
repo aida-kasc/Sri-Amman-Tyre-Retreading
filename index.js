@@ -1,3 +1,8 @@
+window.addEventListener("load", function(){
+	document.getElementById("loadingscreen").remove();
+})
+
+
 if(document.readyState == 'complete'){
 	document.getElementById('radio1').checked = true;
 }
@@ -19,3 +24,14 @@ setInterval(function(){
 		s1.checked = true;
 	}
 }, 5000);
+
+var margin = 0;
+function tprev(){
+	var s = document.getElementById("tfirst");
+	if(margin == -80){
+		margin = 0;
+	}
+	console.log(margin.toString())
+	s.style.marginLeft = margin.toString()+"%";
+	margin -= 20;
+}

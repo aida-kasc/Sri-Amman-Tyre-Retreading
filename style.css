@@ -16,6 +16,23 @@ body{
 }
 /* /over all */
 
+/* loading screen */
+#loadingscreen{
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadinscreengif{
+    height: 50%;
+    width: 50%;
+}
+/* /loading screen */
+
 /* header */
 header{
     display: block;
@@ -187,16 +204,11 @@ header .social_media{
     display: none;
 }
 .tslide{
-    width: 20%;
-    transition: 2s;
-}
-.tslide img{
-    width: 20vw;
-    height: 20vh;
+    transition: 0.2s;
 }
 .tcelestialr{
     position: absolute;
-    background-color: white;
+    background-color: red;
     width: 40vw;
     height: 150px;
     left: 0;
@@ -204,13 +216,22 @@ header .social_media{
 }
 .tcelestiall{
     position: absolute;
-    background-color: white;
+    background-color: red;
     width: 40vw;
     height: 150px;
     right: 0;
     top: 109vh;
 }
-#tfirsta{
-    margin-left: 0;
+.prevbtn{
+    transition: 0.5s;
+}
+.prevbtn:hover{
+    scale: 110%;
+}
+.nextbtn{
+    transition: 0.5s;
+}
+.nextbtn:hover{
+    scale: 110%;
 }
 /* /tyres selection */
