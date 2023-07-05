@@ -48,14 +48,15 @@ header{
 header .wrapper{
     display: flex;
     flex-direction: row;
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
 }
 header .social_media{
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 30%;
+    left: 40%;
+    margin-top: 10px;
     align-items: center;
 }
 /* /header */
@@ -65,7 +66,7 @@ header .social_media{
     position: relative;
     left: 20%;
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .menu ul{
     cursor: pointer;
@@ -74,7 +75,7 @@ header .social_media{
     list-style: none;
 }
 .menu li{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .menu ul li ul{
     display: none;
@@ -97,9 +98,10 @@ header .social_media{
 
 /* landing section */
 .landingsection .wrapper{
+    position: relative;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -107,12 +109,12 @@ header .social_media{
 }
 .slider{
     width: 80vw;
-    height: 95vh;
-    border-radius: 10px;   
+    height: 90vh;
+    border-radius: 10px;
 }
 .slides{
     width: 500%;
-    height: 500px;
+    height: 90vh;
     display: flex;
 }
 .slides input{
@@ -123,20 +125,21 @@ header .social_media{
     transition: 2s;
 }
 .slide img{
+    margin-top: 9px;
     width: 80vw;
-    height: 95vh;
+    height: 90vh;
 }
 .navigation-manual{
     position: absolute;
-    width: 80vw;
-    margin-top: 460px;
+    width: 83vw;
+    margin-top: 85vh;
     display: flex;
     justify-content: center;
 }
 .manual-btn{
     border: 2px solid red;
     padding: 5px;
-    margin-right: 40px;
+    margin-right: 3vw;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
@@ -162,7 +165,8 @@ header .social_media{
     height: 100vh;
     width: 10vw;
     left: 0;
-    top: 10vh;
+    top: 0;
+    margin-top: 9px;
 }
 .celestiall{
     position: absolute;
@@ -170,7 +174,8 @@ header .social_media{
     height: 100vh;
     width: 10vw;
     right: 0;
-    top: 10vh;
+    top: 0;
+    margin-top: 9px;
 }
 
 #floating_logo{
@@ -181,57 +186,18 @@ header .social_media{
 /* /landing section */
 
 /* tyres selection */
-.tyreselection .wrapper{
-    margin: 0;
-    padding: 0;
-    height: 20vh;
+#tyreselection .wrapper{
+    position: relative;
+    margin-top: 50px;
     width: 100vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.tyreslider{
-    width: 20vw;
-    height: 20vh;
-    border-radius: 10px;   
-}
 .tyreslides{
-    width: 500%;
-    height: 150px;
+    position: relative;
     display: flex;
-}
-.tyreslides input{
-    display: none;
-}
-.tslide{
-    transition: 0.2s;
-}
-.tcelestialr{
-    position: absolute;
-    background-color: red;
-    width: 40vw;
-    height: 150px;
-    left: 0;
-    top: 109vh;
-}
-.tcelestiall{
-    position: absolute;
-    background-color: red;
-    width: 40vw;
-    height: 150px;
-    right: 0;
-    top: 109vh;
-}
-.prevbtn{
-    transition: 0.5s;
-}
-.prevbtn:hover{
-    scale: 110%;
-}
-.nextbtn{
-    transition: 0.5s;
-}
-.nextbtn:hover{
-    scale: 110%;
+    flex-direction: row;
 }
 /* /tyres selection */
