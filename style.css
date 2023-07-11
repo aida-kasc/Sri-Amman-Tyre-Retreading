@@ -195,12 +195,13 @@ header .social_media{
     justify-content: center;
     align-items: center;
 }
-.tyreslides{
+#tyreslider{
     position: relative;
     display: flex;
     flex-direction: row;
 }
 /*/ tyres selection */
+
 /* footer */
 footer{
     width: 100%;
