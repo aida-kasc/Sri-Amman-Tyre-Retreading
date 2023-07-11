@@ -200,6 +200,9 @@ header .social_media{
     display: flex;
     flex-direction: row;
 }
+#tyreslider{
+    transition: 1.2s;
+}
 /*/ tyres selection */
 
 /* footer */
