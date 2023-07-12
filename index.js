@@ -28,26 +28,33 @@ setInterval(function(){
 	}
 }, 5000);
 
-margin_left = "-100%"
-resert_mragin = {"bike":"-150%", "car":"-150%", "truck":"-150%", "tractor":"-150%"}
+margin_left = {"bike":"0", "car":"-90%", "truck":"-190%", "tractor":"-300%"}
 key = ["bike", "car", "tractor", "truck"]
 others_hidden = false;
 async function expand(ele){
 	if(others_hidden == false){
+		document.getElementById(ele.id).style.marginLeft = margin_left[ele.id];
 		for(var i=0; i<key.length; i++){
 			if(key[i] != ele.id){
 				document.getElementById(key[i]).setAttribute("hidden", "hidden");
 			}
-			else{
-				document.getElementById(ele.id).style.marginLeft = resert_mragin[ele.id];
-			}
 		}
 		others_hidden = true;
+		if(ele.id != "bike"){
+			await sleep(500);
+		}
+		document.getElementById("tyreinfo").style.display = "flex";
 	}
 	else if(others_hidden){
-		document.getElementById(ele.id).style.marginLeft = 0;
+		document.getElementById("tyreinfo").style.display = "none";
+		document.getElementById(ele.id).style.marginLeft = "0";
+		if(ele.id != "bike"){
+			await sleep(1000);
+		}
 		for(var i=0; i<key.length; i++){
-			document.getElementById(key[i]).removeAttribute("hidden");
+			if(key[i] != ele.id){
+				document.getElementById(key[i]).removeAttribute("hidden");
+			}
 		}
 		others_hidden = false;
 	}
