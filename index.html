@@ -114,16 +114,20 @@
         </div>
         <div id="tyreinfo">
           <div class="proxy">
-            <label for="selectmodel">Select Model</label>
-            <button>Submit</button>
+            <label for="selectmodel">Select Tyre</label>
+            <button onclick="showproduct()">Buy Tyre</button>
           </div>
-          <select name="selectmodel" id="selecttyre">
-            <option>model1</option>
-            <option>model2</option>
-            <option>model3</option>
-            <option>model4</option>
-            <option>model5</option>
+          <select name="selectmodel" id="selecttyre"  onchange="selecttyre(this)">
           </select>
+          <div id="details">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
       </div>
     </section>
 
