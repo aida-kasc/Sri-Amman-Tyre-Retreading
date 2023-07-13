@@ -5,6 +5,9 @@
     box-sizing: border-box;
     color: black;
 }
+ul{
+    list-style: none;
+}
 html{
     font-size: 20px;
 }
@@ -188,7 +191,8 @@ header .social_media{
 /* tyres selection */
 #tyreselection .wrapper{
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 150px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -209,7 +213,7 @@ header .social_media{
 }
 #tyreinfo{
     position: absolute;
-    height: 40px;
+    height: 50px;
     display: none;
 }
 #tyreinfo .proxy{
@@ -223,6 +227,36 @@ header .social_media{
 #tyreinfo select{
     height: 20px;
     margin-left: 10px;
+}
+#tyreinfo #details{
+    position: absolute;
+    margin-top: 58px;
+    left: -130%;
+    height: 150px;
+    width: 50vw;
+    background-color: black;
+    display: flex;
+
+}
+#tyreinfo #details #innerbox{
+    background-color: white;
+    height: 146px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    width: 69.1%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+#tyreinfo #details img{
+    background-color: white;
+    height: 146px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    width: 30%;
 }
 /*/ tyres selection */
 
