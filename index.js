@@ -60,7 +60,7 @@ async function expand(ele){
 		}
 		others_hidden = true;
 		if(type != "bike"){
-			await sleep(500);
+			await sleep(250);
 		}
 		document.getElementById("tyreinfo").style.display = "flex";
 
@@ -80,7 +80,7 @@ async function expand(ele){
 		document.getElementById("tyreinfo").style.display = "none";
 		document.getElementById(type).style.marginLeft = "0";
 		if(type != "bike"){
-			await sleep(1000);
+			await sleep(500);
 		}
 		for(var i=0; i<key.length; i++){
 			if(key[i] != type){
