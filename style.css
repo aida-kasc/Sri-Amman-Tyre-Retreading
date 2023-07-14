@@ -55,6 +55,7 @@ header .wrapper{
     margin: 0 auto;
 }
 header .social_media{
+    scale: 80%;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -185,6 +186,9 @@ header .social_media{
     position: absolute;
     right: 0;
     bottom: 60%;
+    height: 160px;
+    width: 163px;
+    cursor: pointer;
 }
 /* /landing section */
 
@@ -209,7 +213,7 @@ header .social_media{
     width: 185px;
 }
 #tyreslider img{
-    transition: 1s;
+    transition: 0.5s;
 }
 #tyreinfo{
     position: absolute;
@@ -297,6 +301,3 @@ footer .nav ul a:hover{
     color: darkred;
 }
 /*/footer*/
-
-
-/* /footer *//* /tyres selection */
