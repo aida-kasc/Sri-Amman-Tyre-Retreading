@@ -42,7 +42,7 @@ var selectedtyre;
 var type;
 
 (async () => {
-	tyres = await getdata("tyres.json");
+	tyres = await getdata("populartyres.json");
 })();
 
 margin_left = {"bike":"0", "car":"-90%", "truck":"-190%", "tractor":"-300%"}
