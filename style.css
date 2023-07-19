@@ -84,14 +84,17 @@ header .social_media{
 .menu ul li ul{
     display: none;
     position: absolute;
-    background-color: navajowhite;
+    background-color: rgb(230, 227, 227);
     padding-right: 50px;
 }
 .menu ul li ul li{
     color: red;
 }
 .menu ul li:hover{
-    background-color: lightgray;
+    background-color: rgb(230, 227, 227);
+    color: red;
+}
+.menu ul li a:hover{
     color: red;
 }
 .menu ul li:hover > ul{
