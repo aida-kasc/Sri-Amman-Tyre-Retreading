@@ -1,4 +1,4 @@
-{{
+{
 	"bike":{"Model1:bike":["images/tyres/model1bike.png", "Description: </br>Model1 Bike has ....</br>Pressure: ....</br>life: ....", "Tyre Features:<li>buttons: ....</li> <li>pressure: ....</li>"],
 	"Model2:bike":["images/tyres/model2bike.png", "Description: </br>Model2 Bike has ....</br>Pressure: ....</br>life: ....", "Tyre Features:<li>buttons: ....</li> <li>pressure: ....</li>"],
 	"Model3:bike":["images/tyres/model3bike.png", "Description: </br>Model3 Bike has ....</br>Pressure: ....</br>life: ....", "Tyre Features:<li>buttons: ....</li> <li>pressure: ....</li>"],
@@ -66,4 +66,4 @@
 	"Model14:tractor":["images/tyres/model14tractor.png", "Description: </br>Model14 tractor has ....</br>Pressure: ....</br>life: ....", "Tyre Features:<li>buttons: ....</li> <li>pressure: ....</li>"],
 	"Model15:tractor":["images/tyres/model15tractor.png", "Description: </br>Model15 tractor has ....</br>Pressure: ....</br>life: ....", "Tyre Features:<li>buttons: ....</li> <li>pressure: ....</li>"]	}
 }	
-}
+
