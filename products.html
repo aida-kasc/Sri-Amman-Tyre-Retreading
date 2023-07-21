@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sri Amman Tyres Retreading</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="productsstyle.css">
+    <script type="text/javascript" src="products.js"></script>
   </head>
 
   <body>
@@ -51,8 +52,260 @@
       </div>
     </header>
 
+    <section id="filter">
+      <input type="text" id="search">
+      <select name="type" id="type" onchange="filter(this)">
+        <option value="all">All</option>
+        <option value="bike">Bike</option>
+        <option value="car">Car</option>
+        <option value="tractor">Tractor</option>
+        <option value="truck">Truck</option>
+      </select>
+    <button id="search" onclick="search()"><img id="searchicon" src="images/search.svg" alt="search"></button>
+    </section>
+
     <section id="products">
-      
+      <div id="wrapper">
+        <div class="row row1">
+          <div class="col col1">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col2">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col3">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col4">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col5">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col col1">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col2">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col3">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col4">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col5">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row3">
+          <div class="col col1">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col2">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col3">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col4">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col5">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row4">
+          <div class="col col1">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col2">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col3">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col4">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col5">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row5">
+          <div class="col col1">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col2">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col3">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col4">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+          <div class="col col5">
+            <img id="tyreimg" src="" alt="">
+            <div id="innerbox">
+              <p id="abouttyre">
+              </p>
+              <ul id="features">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="buttons">
+      <button id="prev">prev</button>
+      <button id="next">Next</button>
     </section>
 
     <footer>
