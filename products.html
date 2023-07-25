@@ -53,7 +53,7 @@
     </header>
 
     <section id="filter">
-      <input type="text" id="search">
+      <input type="text" id="search" placeholder="Search Tyre">
       <select name="type" id="type" onchange="filter(this)">
         <option value="all">All</option>
         <option value="bike">Bike</option>
@@ -68,13 +68,6 @@
       <div id="wrapper">
         <div class="row row1">
           <div class="col col1">
-            <img id="tyreimg" src="" alt="">
-            <div id="innerbox">
-              <p id="abouttyre">
-              </p>
-              <ul id="features">
-              </ul>
-            </div>
           </div>
           <div class="col col2">
             <img id="tyreimg" src="" alt="">
@@ -304,8 +297,8 @@
     </section>
 
     <section id="buttons">
-      <button id="prev">prev</button>
-      <button id="next">Next</button>
+      <button id="prev_page" onclick="prev_page(this)" disabled>prev</button>
+      <button id="next_page" onclick="next_page(this)">Next</button>
     </section>
 
     <footer>
