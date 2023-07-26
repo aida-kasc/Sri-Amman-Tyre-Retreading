@@ -1,0 +1,38 @@
+#contact{
+	margin-top: 4.55%;
+	margin-left: 20%;
+	margin-right: 20%;
+	height: 65vh;
+	background-color: lightgrey;
+}
+
+#contact .wrapper{
+	margin-left: 10px;
+	height: 100%;
+}
+
+#contact .bar{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 2px;
+	width: 97%;
+	margin-left: 6px;
+	background-color: black;
+}
+
+#contact #askq{
+	display: flex;
+	flex-direction: column;
+}
+
+#contact #askq input{
+	width: 200px;
+}
+#contact #askq #question textarea{
+	resize: none;
+}
+
+#contact #askq button{
+	width: 100px;
+	margin-top: 10px;
+}
