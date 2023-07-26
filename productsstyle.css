@@ -19,20 +19,20 @@
 }
 
 #products #wrapper .row{
-    background-color: purple;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    height: 36vh;
+    height: 43vh;
     width: 100%;
 }
 
 #products #wrapper .row .col{
-    background-color: black;
     display: flex;
+    flex-direction: column;
     margin-left: 10px;
     height: 100%;
     width: 20%;
+    background-color: #e32938;
 }
 
 #buttons{
@@ -42,3 +42,14 @@
     margin-bottom: 4%;
 }
 
+#products #wrapper .row .col img{
+    height: 60%;
+    width: 90%;
+    background-color: lightgray;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+#products #wrapper .row .col p{
+    margin-left: 10px;
+}
