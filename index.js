@@ -42,7 +42,7 @@ var selectedtyre;
 var type;
 
 (async () => {
-	tyres = await getdata("populartyres.json");
+	tyres = await getdata("https://sri-amman-tyre-retreading-default-rtdb.firebaseio.com/popular_tyres.json");
 })();
 
 margin_left = {"bike":"0", "car":"-90%", "truck":"-190%", "tractor":"-300%"}
