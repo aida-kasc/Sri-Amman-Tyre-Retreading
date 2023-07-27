@@ -6,6 +6,7 @@
     <title>Sri Amman Tyres Retreading</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <script type="text/javascript" src="contact.js"></script>
   </head>
 
   <body>
@@ -56,7 +57,7 @@
         <div class="bar"></div>
         
         <h1>Customer care</h1>
-        <select class="select_option" onchange="options(this)">
+        <select class="select_option" onchange="Options(this)">
           <option>Select</option>
           <option>Feedback</option>
           <option>Complain</option>
@@ -65,14 +66,75 @@
 
         <div class="bar"></div>
           
-        <div id="askq">
+        <div id="askq" style="display: none; flex-direction: column;">
           <label>Name <span class="star">*</span></label>
-          <input type="text" id="name">
+          <input type="text" id="aname">
           <label>Email <span class="star">*</span></label>
-          <input type="email" id="email">
+          <input type="email" id="aemail">
           <label>Your question!<span class="star">*</span></label>
-          <textarea rows="4" cols="10" id="question"></textarea>
+          <textarea rows="4" cols="10" id="acomments"></textarea>
           <button>Submit</button>
+        </div>
+
+        <div id="complains" style="display: none; flex-direction: column;">
+          <label>Name <span class="star">*</span></label>
+          <input type="text" id="cname">
+          <label>Email <span class="star">*</span></label>
+          <input type="email" id="cemail">
+          <label>Your Complains!<span class="star">*</span></label>
+          <textarea rows="4" cols="10" id="ccomment"></textarea>
+          <button>Submit</button>
+        </div>
+
+        <div id="feedback" style="display: none; flex-direction: row;">
+          <div class="left" style="display: flex; flex-direction :column;">
+            <label>Name <span class="star">*</span></label>
+            <input type="text" id="fname">
+            <label>Email <span class="star">*</span></label>
+            <input type="email" id="femail">
+
+            <label>Category <span class="star">*</span></label>
+            <select>
+              <option>Select</option>
+              <option>Product</option>
+              <option>Service</option>
+              <option>Staffs</option>
+            </select>
+            <button>Submit</button>
+          </div>
+
+          <div class="right" style="width: 100% display: flex; flex-direction: column">
+            <div id="staffs" style="display: none; flex-direction: column;">
+              <label>Name <span class="star">*</span></label>
+              <input type="text" id="sname">
+              <label>Your comments on the staff<span class="star">*</span></label>
+              <textarea rows="4" cols="10" id="stcomments"></textarea>
+            </div>
+
+            <div id="services" style="display: none" flex-direction: column;>
+              <label>Your comments on our service<span class="star">*</span></label>
+              <textarea rows="4" cols="10" id="scomments"></textarea>
+            </div>
+
+            <div id="products" style="display: none" flex-direction: column;>
+              <label>Select Type <span class="star">*</span></label>
+              <select onclick="selectftype(this)">
+                <option>Select</option>
+                <option>Bike</option>
+                <option>Car</option>
+                <option>Truck</option>
+                <option>Tractor</option>
+              </select>
+
+              <label>Select Model <span class="star">*</span></label>
+              <select id="fmodel">
+                
+              </select>
+
+              <label>Your comments on the product<span class="star">*</span></label>
+              <textarea rows="4" cols="10" id="pcomments"></textarea>
+            </div>
+          </div>
         </div>
       </div>
     </section>

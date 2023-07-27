@@ -1,4 +1,6 @@
-function option(ele){
+console.log("OK")
+
+function Options(ele){
 	all_options = ["askq", "feedback", "complains"]
 	all_options.forEach(function(item){
 		document.getElementById(item).style.display = "none";
@@ -18,14 +20,14 @@ function record_response(ele){
 	console.log(ele.id);
 }
 
-function catoptions(ele){
+function catoption(ele){
 	if(ele.value == "Products"){
-
+		document.getElementById("products").style.display = "flex";
 	}
 	else if(ele.value == "Service"){
-
+		document.getElementById("services").style.display = "flex";
 	}
 	else if(ele.value == "Staffs"){
-		
+		document.getElementById("staffs").style.display = "flex";
 	}
 }
