@@ -73,7 +73,7 @@
           <input type="email" id="aemail">
           <label>Your question!<span class="star">*</span></label>
           <textarea rows="4" cols="10" id="acomments"></textarea>
-          <button>Submit</button>
+          <button id="askqbtn" onclick="record_response(this)">Submit</button>
         </div>
 
         <div id="complains" style="display: none; flex-direction: column;">
@@ -83,7 +83,7 @@
           <input type="email" id="cemail">
           <label>Your Complains!<span class="star">*</span></label>
           <textarea rows="4" cols="10" id="ccomment"></textarea>
-          <button>Submit</button>
+          <button id="complainsbtn" onclick="record_response(this)">Submit</button>
         </div>
 
         <div id="feedback" style="display: none; flex-direction: row;">
@@ -94,16 +94,16 @@
             <input type="email" id="femail">
 
             <label>Category <span class="star">*</span></label>
-            <select>
+            <select onchange="catoption(this)">
               <option>Select</option>
               <option>Product</option>
               <option>Service</option>
               <option>Staffs</option>
             </select>
-            <button>Submit</button>
+            <button id="feedbackbtn" onclick="record_response(this)">Submit</button>
           </div>
 
-          <div class="right" style="width: 100% display: flex; flex-direction: column">
+          <div class="right" style="margin-left: 20%; width: 100%">
             <div id="staffs" style="display: none; flex-direction: column;">
               <label>Name <span class="star">*</span></label>
               <input type="text" id="sname">
@@ -111,12 +111,12 @@
               <textarea rows="4" cols="10" id="stcomments"></textarea>
             </div>
 
-            <div id="services" style="display: none" flex-direction: column;>
+            <div id="services" style="display: none; flex-direction: column;">
               <label>Your comments on our service<span class="star">*</span></label>
               <textarea rows="4" cols="10" id="scomments"></textarea>
             </div>
 
-            <div id="products" style="display: none" flex-direction: column;>
+            <div id="products" style="display: none; flex-direction: column;">
               <label>Select Type <span class="star">*</span></label>
               <select onclick="selectftype(this)">
                 <option>Select</option>
@@ -128,7 +128,7 @@
 
               <label>Select Model <span class="star">*</span></label>
               <select id="fmodel">
-                
+                <option>Select model</option>
               </select>
 
               <label>Your comments on the product<span class="star">*</span></label>

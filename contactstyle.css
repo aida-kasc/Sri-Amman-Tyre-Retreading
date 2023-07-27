@@ -25,16 +25,21 @@
 	flex-direction: column;
 }
 
-#contact #askq input{
+#contact input{
 	width: 200px;
 }
-#contact #askq #question textarea{
-	resize: none;
+#contact select{
+	width: 100px;
 }
 
-#contact #askq button{
+#contact button{
 	width: 100px;
-	margin-top: 10px;
+	margin-top: 20px;
+}
+
+#contact textarea{
+	resize: none;
+	width: 98%;
 }
 
 #contact .star{
