@@ -60,39 +60,38 @@
         <select class="select_option" onchange="Options(this)">
           <option>Select</option>
           <option>Feedback</option>
-          <option>Complain</option>
+          <option>Complaint</option>
           <option>Ask Questions</option>
         </select>
 
         <div class="bar"></div>
-          
-        <div id="askq" style="display: none; flex-direction: column;">
+        <div id="name_email" style="display:none; flex-direction:column;">
           <label>Name <span class="star">*</span></label>
-          <input type="text" id="aname">
+          <input type="text" id="name">
           <label>Email <span class="star">*</span></label>
-          <input type="email" id="aemail">
+          <input type="email" id="email">
+        </div>
+
+        <div id="final" style="display: hidden">
+          <h1 align="center" id="test"></h1>          
+        </div>
+
+        <div id="askq" style="display: none; flex-direction: column;">
           <label>Your question!<span class="star">*</span></label>
           <textarea rows="4" cols="10" id="acomments"></textarea>
+          <label id="error"></label>
           <button id="askqbtn" onclick="record_response(this)">Submit</button>
         </div>
 
-        <div id="complains" style="display: none; flex-direction: column;">
-          <label>Name <span class="star">*</span></label>
-          <input type="text" id="cname">
-          <label>Email <span class="star">*</span></label>
-          <input type="email" id="cemail">
-          <label>Your Complains!<span class="star">*</span></label>
+        <div id="complaint" style="display: none; flex-direction: column;">
+          <label>Your Complaint!<span class="star">*</span></label>
           <textarea rows="4" cols="10" id="ccomment"></textarea>
+          <label id="error"></label>
           <button id="complainsbtn" onclick="record_response(this)">Submit</button>
         </div>
 
         <div id="feedback" style="display: none; flex-direction: row;">
           <div class="left" style="display: flex; flex-direction :column;">
-            <label>Name <span class="star">*</span></label>
-            <input type="text" id="fname">
-            <label>Email <span class="star">*</span></label>
-            <input type="email" id="femail">
-
             <label>Category <span class="star">*</span></label>
             <select onchange="catoption(this)">
               <option>Select</option>
@@ -100,13 +99,16 @@
               <option>Service</option>
               <option>Staffs</option>
             </select>
+            <p id="error"></p>
             <button id="feedbackbtn" onclick="record_response(this)">Submit</button>
           </div>
 
-          <div class="right" style="margin-left: 20%; width: 100%">
+          <div class="right" style="position:absolute; bottom:25%; margin-left: 20%; width: 40%">
             <div id="staffs" style="display: none; flex-direction: column;">
               <label>Name <span class="star">*</span></label>
               <input type="text" id="sname">
+              <label>staffcode <span class="star">*</span></label>
+              <input type="text" id="staffcode">
               <label>Your comments on the staff<span class="star">*</span></label>
               <textarea rows="4" cols="10" id="stcomments"></textarea>
             </div>
@@ -118,7 +120,7 @@
 
             <div id="products" style="display: none; flex-direction: column;">
               <label>Select Type <span class="star">*</span></label>
-              <select onclick="selectftype(this)">
+              <select id="selecttype" onclick="selectftype(this)">
                 <option>Select</option>
                 <option>Bike</option>
                 <option>Car</option>
@@ -127,7 +129,7 @@
               </select>
 
               <label>Select Model <span class="star">*</span></label>
-              <select id="fmodel">
+              <select id="model" id="fmodel">
                 <option>Select model</option>
               </select>
 
